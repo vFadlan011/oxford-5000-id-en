@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "google-translate-api-x": "^10.5.2",
+    "http-proxy-agent": "^5.0.0",
+    "https-proxy-agent": "^5.0.1",
+    "n-readlines": "^1.0.1"
+  }
+}

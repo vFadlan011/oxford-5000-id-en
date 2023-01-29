@@ -1,0 +1,64 @@
+body {
+  background: url("./green.png");
+}
+
+.card {
+  font-family: arial;
+  font-size: 20px;
+
+  max-width: 420px;
+  margin: auto;
+  padding-top: 4rem;
+
+  color: black;
+}
+
+#question,
+#answer {
+  padding: 8px;
+  padding-left: 18px;
+}
+
+#question {
+  background-color: #149a98;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+#answer {
+  background-color: rgba(16, 48, 47, 0.5);
+  color: white;
+  border-radius: 0 0 8px 8px;
+}
+
+#copyright {
+  max-width: 400px;
+
+  padding: 8px;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 120px;
+
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+#indonesia,
+#english {
+  font-size: 32px;
+  line-height: 24px;
+}
+
+#details {
+  font-style: italic;
+  color: hsl(179, 30%, 90%);
+}
+
+#phonetic {
+  background-color: #149a98;
+  display: inline;
+  padding: 4px;
+}
