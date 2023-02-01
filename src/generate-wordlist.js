@@ -9159,7 +9159,7 @@ let oxford3k = [
   "zone",
 ]; // 3207 total words
 
-let oxford_combined = []; // 5333 total words
+let oxford_combined = []; // 5226 total words, 35958 chars
 
 function filter(word) {
   let strippedWords = [
@@ -9233,10 +9233,19 @@ console.log(oxford3k.length);
 console.log(oxford5k.length);
 console.log(oxford_combined.length);
 let dot = 0;
+let char = 0;
 oxford_combined.forEach((word) => {
   if (word.includes(".")) {
     console.log(word);
     dot++;
   }
+  char += word.length;
 });
 console.log("total dot: ", dot);
+console.log("total char: ", char);
+
+/* 
+TODO: use pypi: googletrans
+  limit: 15k chars per 1 request
+  total chars: 35958, 46410 in total if delimiter ", " included
+*/
