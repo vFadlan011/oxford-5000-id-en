@@ -9203,14 +9203,14 @@ function filter(word) {
 
 oxford5k.forEach((word) => {
   if (!oxford_combined.includes(word) && filter(word)) {
-    oxford_combined.push(word);
+    oxford_combined.push(word.toLowerCase());
   }
 });
 
 oxford3k.forEach((word) => {
   if (!oxford_combined.includes(word) && filter(word)) {
     // console.log("add o3k: ", word);
-    oxford_combined.push(word);
+    oxford_combined.push(word.toLowerCase());
   }
 });
 
@@ -9243,9 +9243,3 @@ oxford_combined.forEach((word) => {
 });
 console.log("total dot: ", dot);
 console.log("total char: ", char);
-
-/* 
-TODO: use pypi: googletrans
-  limit: 15k chars per 1 request
-  total chars: 35958, 46410 in total if delimiter ", " included
-*/
