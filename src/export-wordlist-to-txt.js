@@ -1,4 +1,3 @@
-const translate = require("google-translate-api-x");
 fs = require("fs");
 let wordList = JSON.parse(fs.readFileSync("../data/oxford-5300-wordlist.json"));
 
